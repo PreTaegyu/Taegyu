@@ -1,1 +1,72 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner</title>
+</head>
+<body>
+    <header>
+        <div class="title">Memory</div>
+        <select name="" id="category">
+            <option value="opt_1">School</option>
+            <option value="opt_2">Korea</option>
+            <option value="opt_3">Overseas</option>
+        </select>
+    </header>
+    <article>
+        <div class="pre_image">
+            
+        </div>
+
+        <div class="image">
+
+        </div>
+    </article>
+</body>
+
+<style>
+    header{
+        position: relative;
+        padding: 20px 70px;
+        border-bottom: 1px solid black; 
+    }
+    .title{
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #category{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+
+    article{
+
+        height: 88.5vh;
+        background-position: center;
+        background-size:cover;
+        background-image: url("back.jpg");
+        background-repeat: no-repeat;
+    }
+    .pre_image{
+        position:absolute;
+        width: 300px;
+        height: 650px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 15%;
+        top: 20%;
+        left: 13%;
+    }
+    .image{
+        position: absolute;
+        width: 867px;
+        height: 650px;
+        left: 40%;
+        top: 20%;
+        border: 3px solid black;
+    }
+</style>
+</html>
