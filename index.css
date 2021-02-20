@@ -1,0 +1,364 @@
+/* 스마트폰 */
+@media screen and (max-width: 922px){
+
+    .home{
+        position: relative;
+        width: 100%;
+        height:100%;
+        background-image: url('./image/home_background.png');
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+
+    .home_nav{
+        display: none;
+    }
+    
+    .home_words{
+        padding-left: 18%;
+        padding-top: 15%;
+        padding-bottom: 16%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .home_text{
+        font-size: 3vw;
+    }
+    .home_bold{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    
+    .author{
+        position: absolute;
+        left: 90%;
+        top: 40%;
+        color: white;
+        font-size: 2vw;
+        transform: rotate(0.25turn);
+      }
+    
+
+
+
+    #main_introduce{
+        width: 100%;
+        padding-left: 7%;
+        box-sizing: border-box;
+    }
+    #profile_img{
+        float:left;
+        width:160px;
+        height: 160px;
+        border-radius: 50%;
+        border : 1px solid black;
+    }
+    .profile_detail{
+        display: inline-block;
+        height: 160px;
+        margin-left: 30px;
+        line-height: 40px;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .intro_title{
+        margin: 60px 0px;
+        font-size:40px;
+        font-weight: bold;
+    }
+    .introduce_content{
+        margin-top: 15px;
+        font-size:1.5vw;
+        margin-bottom: 40px;
+        padding: 10px;
+        display: inline-block;
+        background-color:#dcdcdc;
+    }
+    
+  
+    
+
+    #main_career{
+        width: 93%;
+        position: relative;
+        padding-left:7%;
+        background-image: url('./image/career_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .philo_title{
+        padding-top: 40px;
+        font-size:35px;
+        font-weight: bold;
+    }
+    .career p{
+        margin-top: 40px;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    ul{
+        font-size: 2.5vwpx;
+        line-height: 30px;
+        padding-bottom: 40px;
+    }
+
+    
+    
+
+    #main_skills{
+        width: 100%;
+        padding-left:7%;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    .skills_title{
+        padding:50px 0px 20px 0px;
+        margin-bottom:40px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #skill_pic{
+        width:85vw;
+        height:55vw;
+    }
+    .project1{
+        display: inline-block;
+ 
+    }
+    .project2{
+        display: inline-block;
+    }
+    .skills_desc{
+        padding: 40px 0px;
+        font-size: 20px;
+    }
+
+
+
+    
+    #main_contact{
+        height: 300px;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 60px 0px 0px 60px;
+    
+    }
+    .contact_emailImage{
+        margin : 60px 0px 0px 0px;
+    }
+    .contact_area{
+        margin : -10px 0px 0px 0px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .contact_email{
+        margin : -10px 0px 0px 0px;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 923px){
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .home{
+        position: relative;
+        width: 100%;
+        height:100%;
+        background-image: url('./image/home_background.png');
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+
+    .home_nav{
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding-top:30px;
+        padding-right: 180px;
+    }
+
+    .menu_item{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        float: left;
+        color: white;
+        margin: 25px 1.1%;
+        padding: 10px;
+    }
+    .menu_item:hover{
+        color: #bbbbbb;
+    }
+    
+    .home_words{
+        padding-left: 18%;
+        padding-top: 15%;
+        padding-bottom: 16%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .home_text{
+        font-size: 32px;
+    }
+    .home_bold{
+        font-size: 70px;
+        font-weight: 500;
+    }
+    
+    .author{
+        position: absolute;
+        left: 90%;
+        top: 40%;
+        color: white;
+        font-size: 24px;
+        transform: rotate(0.25turn);
+      }
+
+      .top{
+
+          z-index: 100;
+          position:fixed;
+          top: 90%;
+          left: 95%;
+          color: #28B4B4;
+          font-size: 25px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          outline:0;
+      }
+    
+
+
+
+    #main_introduce{
+        width: 100%;
+        padding-left: 7%;
+        box-sizing: border-box;
+    }
+    #profile_img{
+        float:left;
+        width:220px;
+        height: 220px;
+        border-radius: 50%;
+        border : 1px solid black;
+    }
+    .profile_detail{
+        padding-top:20px;
+        display: inline-block;
+        height: 220px;
+        margin-left: 50px;
+        line-height: 45px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .intro_title{
+        margin: 60px 0px;
+        font-size:40px;
+        font-weight: bold;
+    }
+    .introduce_content{
+        font-size:18px;
+        margin-bottom: 40px;
+        padding: 20px;
+        display: inline-block;
+        background-color:#dcdcdc;
+    }
+    
+  
+    
+
+    #main_career{
+        width: 93%;
+        position: relative;
+        padding-left:7%;
+        background-image: url('./image/career_background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .career_title{
+        padding-top: 60px;
+        font-size:40px;
+        font-weight: bold;
+    }
+    .career p{
+        margin-top: 60px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    ul{
+        font-size: 20px;
+        line-height: 40px;
+        padding-bottom: 40px;
+    }
+
+    
+    
+
+    #main_skills{
+        width: 100%;
+        padding-left:7%;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    .skills_title{
+        padding:50px 0px 20px 0px;
+        margin-bottom:40px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #skill_pic{
+        width:780px;
+        height:480px;
+    }
+    .project1:hover, .project2:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+    .project1{
+        display: inline-block;
+        margin-right: 70px;
+    }
+    .project2{
+        display: inline-block;
+    }
+    .skills_desc{
+        padding: 40px 0px;
+        font-size: 20px;
+    }
+
+
+
+    
+    #main_contact{
+        height: 300px;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 60px 0px 0px 150px;
+    
+    }
+    .contact_emailImage{
+        margin : 60px 0px 0px 0px;
+    }
+    .contact_area{
+        margin : -10px 0px 0px 0px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .contact_email{
+        margin : -10px 0px 0px 0px;
+        font-weight: normal;
+        font-size: 15px;
+    }
+}
