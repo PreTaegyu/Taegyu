@@ -1,72 +1,143 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winner</title>
+    <title>Taegyu Kim</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
-    <header>
-        <div class="title">Memory</div>
-        <select name="" id="category">
-            <option value="opt_1">School</option>
-            <option value="opt_2">Korea</option>
-            <option value="opt_3">Overseas</option>
-        </select>
-    </header>
-    <article>
-        <div class="pre_image">
-            
+
+    <script src="jqueryCreate.js"></script>
+        <script>
+            function moveIntro(){
+                var offset = $("#main_introduce").offset();
+                $('html, body').animate({scrollTop : offset.top-30}, 0);
+            }
+            function moveCareer(){
+                var offset = $("#main_career").offset();
+                $('html, body').animate({scrollTop : offset.top}, 0);
+            }
+            function moveSkills(){
+                var offset = $("#main_skills").offset();
+                $('html, body').animate({scrollTop : offset.top}, 0);
+            }
+            function moveContact(){
+                var offset = $("#main_contact").offset();
+                $('html, body').animate({scrollTop : offset.top}, 0);
+            }
+        </script>
+    
+
+    <div class="home">
+        <div class="home_nav">
+            <div class="menu_item" style="cursor:pointer;" onclick="window.scrollTo(0,0);">Home</div>
+            <div class="menu_item" style="cursor:pointer;" onclick="moveIntro();">Introduce</div>
+            <div class="menu_item" style="cursor:pointer;" onclick="moveCareer();">Career</div>
+            <div class="menu_item" style="cursor:pointer;" onclick="moveSkills();">Skills</div>
+            <div class="menu_item" style="cursor:pointer;" onclick="moveContact();">Contact</div>
         </div>
 
-        <div class="image">
-
+        <div class="home_words">
+            <p class="home_text">포트폴리오 사이트를</p>
+            <p class="home_text">만들었습니다.</p>
+            <p class="home_bold">Developer. Kim Taegyu</p>
         </div>
-    </article>
+
+        <span class="author">Made by Kim</span>
+
+        <button class="top" onClick="window.scrollTo(0,0);">&#129045;</button>
+    </div>
+  
+
+
+    <div id="main_introduce">
+        <div class="intro_title">Introduce</div>
+        
+        <div class="intro_contents">
+            <img id="profile_img" src="./image/back.jpg" alt="">
+            <div class="profile_detail">
+                <div>이름 : 김태규</div>
+                <div>생년월일 : 1999.12.05</div>
+                <div>학력 : ..............</div>
+            </div>
+
+            <div class="introduce_content">
+                <p> 저는 새로운 것에 대한 두려움과 걱정이 없고 도전하는 것을 좋아합니다.</p>
+                <p> 그래서 “밝다”, “창의적이다”라는 말을 듣기도 하고 때로는 “무모하다”, “대책이 없다”라는 말을 듣기도 합니다.</p>
+                <p> 대책을 세우고 움직이기보다는 현재에 충실하면 잘 풀릴 수 있고 혹여 안 좋게 흘러가더라도 잘 헤쳐 나갈 수 있다는 긍정적인 마인드로 역경을 헤쳐나갔습니다.</p>
+                <p> 이러한 성격때문에 주장과 사고는 확고한 편이지만, 역설적으로 타인의 말을 잘 들어주고 수용합니다.</p>
+                <p> 타인의 의견을 수용함으로써, 저의 극단적 성향을 제어해 줄 수 있다고 생각하기 때문입니다.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="main_career">
+        <div class="career_title">Career</div>
+        <div class="career">
+            <p>경력</p>
+            <ul>
+                <li>........................</li>
+                <li>..............................</li>
+            </ul>
+            <p>기타사항</p>
+            <ul>
+                <li>........</li>
+                <li>................</li>
+                <li>...........................</li>
+                <li>..................................</li>
+                <li>...................</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="main_skills">
+        <div class="skills_title">Skills</div>
+        <div class="skills">
+            <div class="project">
+                <div class="project1">
+                    <h3><li>파이썬을 이용한 검색 엔진 프로그램</li></h3>
+                    <img id="skill_pic" src="./image/python_parsing.png" alt="">
+                    <p class="project_detail">-> 웹 사이트의 단어들을 뽑아내고 검색한 단어의 수가 많이 들어간 사이트 순서대로 출력</p>
+                </div>
+                <div class="project2">
+                    <h3><li>호텔 웹사이트</li></h3>
+                    <img id="skill_pic" src="./image/web_hotel.png" alt="">
+                    <p class="project_detail">-> 로그인 기능이 있고 객실, 날짜, 인원을 입력받는 호텔 예약 사이트 </p>
+                </div>
+            </div>
+            <p class="skills_desc">..............................................................</p>
+        </div>
+    </div>
+
+
+
+
+    <footer id="main_contact">
+        <div class="contact_top">Contact</div>
+
+        <div class="contact_emailImage">
+            <img src="./image/img_email.png" />
+        </div>
+
+        <div class="contact_area">
+            <p>Cheong ju, SOUTH KOREA</p>
+        </div>
+
+        <div class="contact_email">
+            <p>...............@gmail.com / 010 - 6666 - 9343</p>
+        </div>
+    </footer>
+
+
 </body>
-
-<style>
-    header{
-        position: relative;
-        padding: 20px 70px;
-        border-bottom: 1px solid black; 
-    }
-    .title{
-        display: inline-block;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    #category{
-        margin-left: 80px;
-        font-size: 20px;
-    }
-
-    article{
-
-        height: 88.5vh;
-        background-position: center;
-        background-size:cover;
-        background-image: url("back.jpg");
-        background-repeat: no-repeat;
-    }
-    .pre_image{
-        position:absolute;
-        width: 300px;
-        height: 650px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 15%;
-        top: 20%;
-        left: 13%;
-    }
-    .image{
-        position: absolute;
-        width: 867px;
-        height: 650px;
-        left: 40%;
-        top: 20%;
-        border: 3px solid black;
-    }
-</style>
 </html>
